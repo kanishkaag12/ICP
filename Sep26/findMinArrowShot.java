@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class Solution {
     public int findMinArrowShots(int[][] arr) {
         Arrays.sort(arr, (a, b) -> Integer.compare(a[0], b[0]));
