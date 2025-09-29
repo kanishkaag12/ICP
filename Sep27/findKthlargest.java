@@ -8,10 +8,11 @@ class Solution {
         }
     } */
     public int findKthLargest(int[] nums, int k) {
-       /*  Arrays.sort(nums);
+       /*  Arrays.sort(nums);  //nlogn
         reverse(nums);
         return nums[k-1]; */
-
+        
+        //n logk
         PriorityQueue<Integer> pq = new PriorityQueue<>();
         for(int i=0; i<nums.length; i++) {
             pq.add(nums[i]);
